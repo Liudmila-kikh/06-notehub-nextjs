@@ -1,16 +1,8 @@
-export type Tag = "Todo" | "Work" | "Personal" | "Meeting" | "Shopping";
-
 export interface Note {
   id: string;
   title: string;
   content: string;
+  tag: 'Todo' | 'Work' | 'Personal' | 'Meeting' | 'Shopping';
   createdAt: string;
   updatedAt: string;
-  tag: Tag;
-}
-
-export interface AddNoteFormValue {
-  title: string;
-  content: string;
-  tag: string;
 }

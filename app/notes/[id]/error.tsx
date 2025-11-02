@@ -1,12 +1,16 @@
-"use client";
+// app/notes/[id]/error.tsx
+
+'use client';
 
 interface Props {
   error: Error;
-};
+}
 
-const Error = ({ error}: Props) => {
+const Error = ({ error }: Props) => {
   return (
-    <p>Could not fetch the list of notes. {error.message}</p>
+    <div>
+      <p>Could not fetch note details. {error.message}</p>
+    </div>
   );
 };
 
